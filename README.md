@@ -1,7 +1,7 @@
 # Social Tracker
 ***
 ## Link To Project Proposal
-https://github.com/deco3500-2019/FoodForThought.wiki.git
+https://github.com/deco3500-2019/FoodForThought/wiki/Proposal
 
 ## Link to Final Report
 link to wiki page here for final report
