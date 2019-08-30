@@ -1,4 +1,4 @@
-# Project Name Here
+# Social Tracker
 ***
 ## Link To Project Proposal
 https://github.com/deco3500-2019/FoodForThought.wiki.git
