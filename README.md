@@ -1,7 +1,7 @@
 # Project Name Here
 ***
 ## Link To Project Proposal
-link to wiki page here for proposal
+https://github.com/deco3500-2019/FoodForThought.wiki.git
 
 ## Link to Final Report
 link to wiki page here for final report
