@@ -1,0 +1,46 @@
+body {
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  #wheel {
+    display: inline-block;
+    width: 90%;
+    max-width: 800px;
+    height: 90%;
+    max-height: 800px;
+    margin-top: 3%;
+    transition: transform 10s cubic-bezier(.5,.1,.15,1);
+    transform: rotate(0deg);
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  #peg {
+    display: block;
+    width: 3%;
+    min-width: 15px;
+    max-width: 40px;
+    height: auto;
+    position: absolute;
+    top: 2%;
+    left: 48.5%;
+    z-index: 2;
+  }
+  
+  #button {
+    font-size: 24px;
+    border-radius: 10px;
+    width: 100px;
+    height: 60px;
+    color: white;
+    background: #89bd46;
+    border: none;
+    display: inline-block;
+    margin: 25px;
+    z-index: 3;
+  }
+  
+  #button:hover, #button:focus {
+    background: #89bd46;
+  }
