@@ -21,25 +21,26 @@
     $db = new MySQLDatabase();
     $db->connect("root", "", "deco3500");
     session_start();
+    $_SESSION["date"]=$_GET["date"];
+    $_SESSION["time"]=$_GET["time"];
      ?>
   <body>
   <div class="text-center">
     <p>Making plan with tray</p>
   </div>
 
-    <form method="get" action="where.php">
-        <label>When are you eating with Tray?</label>
-        <label>DATE</label>
-        <input type="date" id="inputMDEx1" name="date" max="3000-12-31" min="1000-01-01" class="form-control">
-        <label>TIME</label>
-        <input type="time" id="inputMDEx1" name="time" class="form-control">
-        <button type="submit" class="btn btn-primary btn-sm btn-block">Next</button>
-    </form> 
+    <div>
+        <label>Where are you eating with Tray?</label>
+        
+        <a class="btn btn-primary btn-sm btn-block" href="confirm.php">Restaurant</a>
+        <a class="btn btn-primary btn-sm btn-block" href="confirm.php">Someone's House</a>
+        
+    </div> 
 
     <nav class="navbar fixed-bottom navbar-light" style="background-color: #ebebeb;padding-left:13%;padding-right:8%;height:55px;">
-        <a class="navbar-brand bg-dark" href="ShiftPicker.php" style="font-size:11px;">WHEN</a>
-        <a class="navbar-brand" href="profile.php" style="font-size:11px;">WHERE</a>
-        <a class="navbar-brand" href="#" style="font-size:11px;">CONFIRM</a>
+        <a class="navbar-brand"  style="font-size:11px;">WHEN</a>
+        <a class="navbar-brand bg-dark"  style="font-size:11px;">WHERE</a>
+        <a class="navbar-brand"  style="font-size:11px;">CONFIRM</a>
         
     </nav>
 
@@ -48,6 +49,5 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
 </body>
 </html>
