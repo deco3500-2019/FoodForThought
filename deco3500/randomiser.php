@@ -14,23 +14,41 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <title>Plan</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Plan</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<script type="text/javascript" src="js/main.js"></script>
+  <style type="text/css">
+  	#canvas{
+	    background:#eeeeee;
+	}
+	</style>
+  
   </head>
   <body>
   <div class="text-center">
     <p>Making plan with tray</p>
   </div>
+      <article class="htmleaf-container">
+		      <header class="htmleaf-header">
+		      </header>
+		  <div style="width:500px;margin:30px auto 0 auto;text-align:center;">
 
-    <img src="http://www.blimpage.com/pants/wheel_of_lunch.svg" id="wheel"><br>
-    <img src="http://www.blimpage.com/pants/wheel_of_lunch_peg.svg" id="peg"><br>
-    <button id="button">Spin</button>
+			<canvas id="canvas" width="500px" height="500px"></canvas>
+			<button id="btn" style="margin-top:20px;">start</button>
 
-    <nav class="navbar fixed-bottom navbar-light" style="background-color: #ebebeb;padding-left:13%;padding-right:8%;height:55px;">
+		  </div>
+		
+	    </article>
+
+
+    <!-- <nav class="navbar fixed-bottom navbar-light" style="background-color: #ebebeb;padding-left:13%;padding-right:8%;height:55px;">
         <a class="navbar-brand" href="ShiftPicker.php" style="font-size:11px;">WHEN</a>
         <a class="navbar-brand" href="profile.php" style="font-size:11px;">WHERE</a>
         <a class="navbar-brand" href="#" style="font-size:11px;">CONFIRM</a>
         
-    </nav>
+    </nav> -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
