@@ -19,7 +19,7 @@
   <?php
     include("remote/db.php");
     $db = new MySQLDatabase();
-    $db->connect("root", "", "deco3500");
+    $db->connect("webuser", "", "deco3500");
     session_start();
      ?>
   <body>
@@ -27,17 +27,15 @@
     <p>Making plan with tray</p>
   </div>
 
-    <div class="card">
-    <div class="card-body">
-    <h5 class="card-title">Summary of your plans</h5>
-    <p class="card-text">Time: <?php echo $_SESSION["time"]; ?></p>
-    <p class="card-text">Date: <?php echo $_SESSION["date"]; ?></p>
-    <p class="card-text">Location: </p>
-    <p class="card-text">Waiting confirmation from Tray</p>
-    <a href="#" class="card-link">Check progress</a>
-    <a href="#" class="card-link">Change plans</a>
-  </div>
-    </div>
+  <form method="get" action="confirm.php">
+  <select name="house" class="form-control mt-3 mb-1">
+     <option value="" disabled selected>Select the place</option>
+        <option value = 'Mary'>Mary</option>;
+         <option value = 'Jack'>Jack</option>;
+         <option value = 'Kevin'>Kevin</option>;
+  </select>
+  <button type="submit">Submit</button>
+</form>
 
 
     <nav class="navbar fixed-bottom navbar-light" style="background-color: #ebebeb;padding-left:13%;padding-right:8%;height:55px;">

@@ -19,8 +19,14 @@
   <?php
     include("remote/db.php");
     $db = new MySQLDatabase();
-    $db->connect("root", "", "deco3500");
+    $db->connect("webuser", "", "deco3500");
     session_start();
+    if(isset($_GET['res'])){
+      $res = $_GET['res'];
+    }
+    if(isset($_GET['house'])){
+      $house= $_GET['house'];
+    }
      ?>
   <body>
   <div class="text-center">
@@ -32,7 +38,12 @@
     <h5 class="card-title">Summary of your plans</h5>
     <p class="card-text">Time: <?php echo $_SESSION["time"]; ?></p>
     <p class="card-text">Date: <?php echo $_SESSION["date"]; ?></p>
-    <p class="card-text">Location: </p>
+    <?php if(isset($res)){ ?>
+    <p class="card-text">Location: <?php echo $res; ?></p>
+    <?php } ?>
+    <?php if(isset($house)){ ?>
+      <p class="card-text">Location: <?php echo $house; ?>'s house</p>
+    <?php } ?>
     <p class="card-text">Waiting confirmation from Tray</p>
     <a href="#" class="card-link">Check progress</a>
     <a href="#" class="card-link">Change plans</a>

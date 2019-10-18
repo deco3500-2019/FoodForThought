@@ -19,7 +19,7 @@
   <?php
     include("remote/db.php");
     $db = new MySQLDatabase();
-    $db->connect("root", "", "deco3500");
+    $db->connect("webuser", "", "deco3500");
     session_start();
      ?>
   <body>
@@ -27,6 +27,7 @@
     <p>Making plan with tray</p>
   </div>
 
+    <div class="card">
     <form method="get" action="where.php">
         <label>When are you eating with Tray?</label>
         <label>DATE</label>
@@ -35,6 +36,7 @@
         <input type="time" id="inputMDEx1" name="time" class="form-control" required>
         <button type="submit" class="btn btn-primary btn-sm btn-block">Next</button>
     </form> 
+    </div>
 
     <nav class="navbar fixed-bottom navbar-light" style="background-color: #ebebeb;padding-left:13%;padding-right:8%;height:55px;">
         <a class="navbar-brand bg-dark" href="index.php" style="font-size:11px;">WHEN</a>

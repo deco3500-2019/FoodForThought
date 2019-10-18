@@ -19,7 +19,7 @@
   <?php
     include("remote/db.php");
     $db = new MySQLDatabase();
-    $db->connect("root", "", "deco3500");
+    $db->connect("webuser", "", "deco3500");
     session_start();
     $_SESSION["date"]=$_GET["date"];
     $_SESSION["time"]=$_GET["time"];
@@ -32,8 +32,8 @@
     <div>
         <label>Where are you eating with Tray?</label>
         
-        <a class="btn btn-primary btn-sm btn-block" href="confirm.php">Restaurant</a>
-        <a class="btn btn-primary btn-sm btn-block" href="confirm.php">Someone's House</a>
+        <a class="btn btn-primary btn-sm btn-block" href="randomiser.php">Restaurant</a>
+        <a class="btn btn-primary btn-sm btn-block" href="place.php">Someone's House</a>
         
     </div> 
 
