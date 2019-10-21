@@ -17,13 +17,13 @@
 		
 	</head>
 	<body>
-	<nav class="navbar fixed-top navbar-dark bg-dark" style="padding-left:25%;padding-right:8%;height:55px;">
-			<a class="navbar-brand" href="#">Making plan with Tray</a>
+	<nav class="navbar fixed-top navbar-dark bg-dark" style="height:55px;">
+			<a id="title" class="navbar-brand" href="#">Making plan with Tray</a>
 	</nav>
 		<!-- <article class="htmleaf-container">
 			<header class="htmleaf-header">
 			</header> -->
-			<div style="margin-top:80px;">
+			<div style="margin-top:60px;">
 				<canvas id="canvas" width="400px" height="350px"></canvas>
 				<button class="btn btn-primary " id="btn">Spin</button>
 			</div>

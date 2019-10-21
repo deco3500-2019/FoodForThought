@@ -22,8 +22,8 @@
 		session_start();
 		?>
 	<body>
-	<nav class="navbar fixed-top navbar-dark bg-dark" style="padding-left:25%;padding-right:8%;height:55px;">
-			<a class="navbar-brand" href="#">Making plan with Tray</a>
+	<nav class="navbar fixed-top navbar-dark bg-dark" style="height:55px;">
+			<a id="title" class="navbar-brand" href="#">Making plan with Tray</a>
 	</nav>
 
 	<div class="card" style="background-color: #ebebeb; padding: 20px;margin-top:80px">
