@@ -1,0 +1,14 @@
+body{
+    margin:20px;
+}
+
+canvas{
+    width:100%;
+    margin-left: 5%;
+  }
+  
+  #btn{
+    margin:auto;
+    display: block;
+    margin-top: 20px;
+  }
