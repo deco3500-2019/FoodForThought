@@ -22,10 +22,10 @@
 			session_start();
 		?>
 	<body>
-		<div class="text-center">
-			<p style="color: grey">Making plan with tray</p>
-		</div>
-		<div class="card" style="background-color: #ebebeb; padding: 20px">
+	<nav class="navbar fixed-top navbar-dark bg-dark" style="padding-left:25%;padding-right:8%;height:55px;">
+			<a class="navbar-brand" href="#">Making plan with Tray</a>
+	</nav>
+		<div class="card" style="background-color: #ebebeb; padding: 20px;margin-top:80px">
 			<form method="get" action="where.php">
 				<label>When are you eating with Tray?</label></br></br>
 				<label>DATE: </label>
@@ -35,14 +35,14 @@
 				<input type="time" id="inputMDEx1" name="time" class="form-control" required>
 				</br>
 				<div class="text-right mb-3" style="margin-right: 20px">
-					<button type="submit" class="btn btn-primary btn-sm">Next</button>
+					<button type="submit" class="btn btn-primary">Next</button>
 				</div>
 			</form> 
 		</div>
-		<nav class="navbar fixed-bottom navbar-light" style="background-color: #ebebeb;padding-left:13%;padding-right:8%;height:55px;">
-			<a class="navbar-brand bg-light" href="index.php" style="font-size:11px;">WHEN</a>
-			<a class="navbar-brand" href="where.php" style="font-size:11px;">WHERE</a>
-			<a class="navbar-brand" href="confirm.php" style="font-size:11px;">CONFIRM</a>
+		<nav class="navbar fixed-bottom navbar-dark bg-dark" style="padding-left:8%;padding-right:8%;height:55px;">
+			<a class="btn btn-light" href="index.php" style="font-size:11px;">WHEN</a>
+			<a class="btn btn-dark" href="where.php" style="font-size:11px;">WHERE</a>
+			<a class="btn btn-dark" href="confirm.php" style="font-size:11px;">CONFIRM</a>
 		</nav>
 
 		<!-- Optional JavaScript -->

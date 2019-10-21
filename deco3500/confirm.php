@@ -28,30 +28,29 @@
 		}
 	?>
 	<body>
-		<div class="text-center">
-			<p style="color: grey">Making plan with tray</p>
-		</div>
-
-		<div class="card">
+	<nav class="navbar fixed-top navbar-dark bg-dark" style="padding-left:25%;padding-right:8%;height:55px;">
+			<a class="navbar-brand" href="#">Making plan with Tray</a>
+	</nav>
+		<div class="card" style="background-color: #ebebeb; padding: 20px; margin-top:80px">
 			<div class="card-body">
 				<h5 class="card-title">Summary of your plans</h5>
-				<p class="card-text">Time: <?php echo $_SESSION["time"]; ?></p>
 				<p class="card-text">Date: <?php echo $_SESSION["date"]; ?></p>
+				<p class="card-text">Time: <?php echo $_SESSION["time"]; ?></p>
 				<?php if(isset($res)){ ?>
 				<p class="card-text">Location: <?php echo $res; ?></p>
 				<?php } ?>
 				<?php if(isset($house)){ ?>
-				<p class="card-text">Location: <?php echo $house; ?>'s house</p>
+				<p class="card-text">Location: <?php echo $house; ?></p>
 				<?php } ?>
 				<p class="card-text">Tray agrees with these plans!</p>
-				<a href="index.php" class="card-link">Change plans</a>
+				<a class="btn btn-primary" href="index.php" class="card-link">Change plans</a>
 			</div>
 		</div>
 
-		<nav class="navbar fixed-bottom navbar-light" style="background-color: #ebebeb;padding-left:13%;padding-right:8%;height:55px;">
-			<a class="navbar-brand" href="index.php" style="font-size:11px;">WHEN</a>
-			<a class="navbar-brand" href="where.php" style="font-size:11px;">WHERE</a>
-			<a class="navbar-brand bg-light" href="confirm.php" style="font-size:11px;">CONFIRM</a>
+		<nav class="navbar fixed-bottom navbar-dark bg-dark" style="padding-left:8%;padding-right:8%;height:55px;">
+			<a class="btn btn-dark" href="index.php" style="font-size:11px;">WHEN</a>
+			<a class="btn btn-dark" href="where.php" style="font-size:11px;">WHERE</a>
+			<a class="btn btn-light" href="confirm.php" style="font-size:11px;">CONFIRM</a>
 		</nav>
 
 		<!-- Optional JavaScript -->

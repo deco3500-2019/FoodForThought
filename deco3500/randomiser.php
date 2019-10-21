@@ -17,14 +17,14 @@
 		
 	</head>
 	<body>
-		<div class="text-center">
-			<p style="color: grey">Making plan with tray</p>
-		</div>
+	<nav class="navbar fixed-top navbar-dark bg-dark" style="padding-left:25%;padding-right:8%;height:55px;">
+			<a class="navbar-brand" href="#">Making plan with Tray</a>
+	</nav>
 		<!-- <article class="htmleaf-container">
 			<header class="htmleaf-header">
 			</header> -->
-			<div>
-				<canvas id="canvas" width="400px" height="400px"></canvas>
+			<div style="margin-top:80px;">
+				<canvas id="canvas" width="400px" height="350px"></canvas>
 				<button class="btn btn-primary " id="btn">Spin</button>
 			</div>
 		
@@ -51,19 +51,19 @@
 			<div class="form-group text-center col-xs-12">
 				<form calss="form-group center" method="get" action="confirm.php">
 					<label>Here's where you are going to eat:</label>
-					<input class="form-control" readonly type="text" name="res" id="res">
+					<div id="container"><input class="form-control" readonly type="text" name="res" id="res"></div>
 					<br>
-					<button class="btn btn-dark" type="submit">Confirm</button>
-					<button type="button" class="btn btn-dark " data-toggle="modal" data-target="#exampleModalCenter">
+					<button class="btn btn-primary" type="submit">Confirm</button>
+					<button type="button" class="btn btn-primary " data-toggle="modal" data-target="#exampleModalCenter">
 					Check it on the Map
 					</button>
 				</form>
 			</div>
 
-			<nav class="navbar fixed-bottom navbar-light" style="background-color: #ebebeb;padding-left:13%;padding-right:8%;height:55px;">
-			<a class="navbar-brand" href="index.php" style="font-size:11px;">WHEN</a>
-			<a class="navbar-brand bg-light" href="where.php" style="font-size:11px;">WHERE</a>
-			<a class="navbar-brand" href="confirm.php" style="font-size:11px;">CONFIRM</a>
+			<nav class="navbar fixed-bottom navbar-dark bg-dark" style="padding-left:8%;padding-right:8%;height:55px;">
+			<a class="btn btn-dark" href="index.php" style="font-size:11px;">WHEN</a>
+			<a class="btn btn-light" href="where.php" style="font-size:11px;">WHERE</a>
+			<a class="btn btn-dark" href="confirm.php" style="font-size:11px;">CONFIRM</a>
 			</nav>
 		<!-- </article> -->
 

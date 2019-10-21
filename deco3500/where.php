@@ -26,25 +26,26 @@
 		
 	?>
 	<body>
-		<div class="text-center">
-			<p style="color: grey">Making plan with tray</p>
-		</div>
+		<nav class="navbar fixed-top navbar-dark bg-dark" style="padding-left:25%;padding-right:8%;height:55px;">
+			<a class="navbar-brand" href="#">Making plan with Tray</a>
+	</nav>
 
-		<div>
+		<div class="card" style="background-color: #ebebeb; padding: 20px;margin-top:80px">
+			<div class="text-center ">
+
 			<label>Where are you eating with Tray?</label>
-			</br>
-			<div class="text-center">
-				<a class="btn btn-primary btn-lg" href="randomiser.php">Restaurant</a>
+				<div id="container">
+				<a class="btn btn-primary btn-block" href="randomiser.php">Restaurant</a>
 				</br>
-				</br>
-				<a class="btn btn-primary btn-sm" href="place.php">Someone's House</a>
+				<a class="btn btn-primary btn-block" href="place.php">Someone's House</a>
+				</div>
 			</div>
 		</div> 
 
-		<nav class="navbar fixed-bottom navbar-light" style="background-color: #ebebeb;padding-left:13%;padding-right:8%;height:55px;">
-			<a class="navbar-brand" href="index.php" style="font-size:11px;">WHEN</a>
-			<a class="navbar-brand bg-light" href="where.php" style="font-size:11px;">WHERE</a>
-			<a class="navbar-brand" href="confirm.php" style="font-size:11px;">CONFIRM</a>
+		<nav class="navbar fixed-bottom navbar-dark bg-dark" style="padding-left:8%;padding-right:8%;height:55px;">
+			<a class="btn btn-dark" href="index.php" style="font-size:11px;">WHEN</a>
+			<a class="btn btn-light" href="where.php" style="font-size:11px;">WHERE</a>
+			<a class="btn btn-dark" href="confirm.php" style="font-size:11px;">CONFIRM</a>
 		</nav>
 
 		<!-- Optional JavaScript -->
