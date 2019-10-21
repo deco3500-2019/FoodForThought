@@ -3,7 +3,7 @@
 ## Link To Project Proposal
 https://github.com/deco3500-2019/FoodForThought/wiki/Proposal
 
-## Link to Final Report
+## Link to Final prototype
 https://foodforthought.uqcloud.net/
 
 ## link to wiki page here for final report
